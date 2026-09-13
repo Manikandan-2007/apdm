@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="apdm">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>apdm</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0F141C;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #F3F5F9;
+      overflow: hidden;
+    }
+    .loading-container {
+      text-align: center;
+      user-select: none;
+    }
+    .emblem {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 18px auto;
+      border-radius: 50%;
+      background: radial-gradient(circle, #E8AB75 0%, #B57035 100%);
+      box-shadow: 0 0 28px rgba(217, 145, 83, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pulse 2s ease-in-out infinite alternate;
+    }
+    .spinner {
+      width: 38px;
+      height: 38px;
+      border: 2.5px solid rgba(217, 145, 83, 0.2);
+      border-radius: 50%;
+      border-top-color: #D99153;
+      animation: spin 0.9s linear infinite;
+      margin: 0 auto 16px auto;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      from { transform: scale(0.96); opacity: 0.85; }
+      to { transform: scale(1.04); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container" id="app-loading">
+    <div class="emblem">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+        <line x1="12" y1="19" x2="12" y2="22"></line>
+      </svg>
+    </div>
+    <div class="spinner"></div>
+    <h2 style="letter-spacing: 4px; margin: 0 0 6px 0; color: #F3F5F9; font-weight: 700;">APDM</h2>
+    <p style="color: #A6B2C4; font-size: 13px; margin: 0; letter-spacing: 0.5px;">Cherished Voices, Timeless Memories</p>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
