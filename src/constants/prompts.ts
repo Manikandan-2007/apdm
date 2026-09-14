@@ -1,0 +1,155 @@
+import { SuggestionCategory, SuggestionPrompt } from '../types';
+
+export const SUGGESTION_CATEGORIES: SuggestionCategory[] = [
+  { id: 'meenu', title: 'Meenu', icon: '👧', shortChip: 'Meenu' },
+  { id: 'dinesh', title: 'Dinesh', icon: '💼', shortChip: 'Dinesh' },
+  { id: 'padma', title: 'Padma', icon: '🌸', shortChip: 'Padma' },
+  { id: 'family', title: 'Our Family', icon: '🏡', shortChip: 'Family' },
+  { id: 'food', title: 'Cuisine & Samayal', icon: '🍲', shortChip: 'Samayal' },
+  { id: 'childhood', title: 'Childhood Stories', icon: '🎈', shortChip: 'Childhood' },
+  { id: 'advice', title: 'Family Wisdom & Advice', icon: '🌟', shortChip: 'Wisdom' },
+  { id: 'daily', title: 'Daily Conversation', icon: '☕', shortChip: 'Daily Life' },
+  { id: 'casual', title: 'Casual Talk', icon: '💬', shortChip: 'Casual' },
+  { id: 'memories', title: 'Cherished Memories', icon: '📸', shortChip: 'Memories' },
+  { id: 'emotional', title: 'Comfort & Encouragement', icon: '💛', shortChip: 'Comfort' },
+  { id: 'stories', title: 'Stories & Tales', icon: '📖', shortChip: 'Stories' },
+];
+
+export const ALL_SUGGESTION_PROMPTS: SuggestionPrompt[] = [
+  // 1. MEENU (Explicit User Requirement List First)
+  { categoryId: 'meenu', prompt: 'Appa, innikku college eppadi poguthu?', shortLabel: 'College eppadi poguthu?' },
+  { categoryId: 'meenu', prompt: 'Appa, enakku konjam pesanum.', shortLabel: 'Enakku konjam pesanum' },
+  { categoryId: 'meenu', prompt: 'Appa, enakku oru advice venum.', shortLabel: 'Oru advice venum' },
+  { categoryId: 'meenu', prompt: 'Appa, innikku romba tired-a irukku.', shortLabel: 'Romba tired-a irukku' },
+  { categoryId: 'meenu', prompt: 'Appa, enna pathi konjam pesunga.', shortLabel: 'Enna pathi konjam pesunga' },
+  { categoryId: 'meenu', prompt: 'Appa, childhood memories edhavadhu sollunga.', shortLabel: 'Childhood memories sollunga' },
+  { categoryId: 'meenu', prompt: 'Appa, enakku motivation venum.', shortLabel: 'Enakku motivation venum' },
+  { categoryId: 'meenu', prompt: 'Appa, innikku enna sapteenga?', shortLabel: 'Innikku enna sapteenga?' },
+  { categoryId: 'meenu', prompt: 'Appa, konjam joke sollunga.', shortLabel: 'Konjam joke sollunga' },
+  { categoryId: 'meenu', prompt: 'Appa, en kooda konjam neram pesunga.', shortLabel: 'En kooda konjam neram pesunga' },
+  { categoryId: 'meenu', prompt: 'Meenu pesuren, Appa... innikku college-la romba tired-a irukku.', shortLabel: 'Meenu: Romba tired-a irukku' },
+  { categoryId: 'meenu', prompt: 'Appa, Meenu pathi pesunga.', shortLabel: 'Meenu pathi pesunga' },
+  { categoryId: 'meenu', prompt: 'Appa, Meenu-ku vendakkai poriyal senja memory nyabagam irukka?', shortLabel: 'Vendakkai poriyal memory' },
+  { categoryId: 'meenu', prompt: 'Appa, naan eppadi irukken nu kekkareengala?', shortLabel: 'Naan eppadi irukken?' },
+  { categoryId: 'meenu', prompt: 'Appa, naan ippo 3rd year college padikkuren.', shortLabel: '3rd year college' },
+  { categoryId: 'meenu', prompt: 'Appa, en college life eppadi poguthu nu pesalama?', shortLabel: 'En college life' },
+  { categoryId: 'meenu', prompt: 'Appa, enakku college pathi enna advice solluveenga?', shortLabel: 'Enakku college advice' },
+  { categoryId: 'meenu', prompt: 'Appa, naan chinna vayasula eppadi iruppen?', shortLabel: 'Chinna vayasula naan' },
+  { categoryId: 'meenu', prompt: 'Appa, naan ungalukku yen ivlo chellam?', shortLabel: 'Naan yen ivlo chellam?' },
+  { categoryId: 'meenu', prompt: 'Appa, en kitta ippo pesina mudhala enna keppeenga?', shortLabel: 'Mudhala enna keppeenga?' },
+  { categoryId: 'meenu', prompt: 'Appa, en future pathi enna solluveenga?', shortLabel: 'En future pathi advice' },
+  { categoryId: 'meenu', prompt: 'Appa, naan stress-a irundha eppadi encourage pannuveenga?', shortLabel: 'Stress-a irundha encourage' },
+  { categoryId: 'meenu', prompt: 'Appa, en kooda irundha oru happy memory sollunga.', shortLabel: 'En kooda happy memory' },
+
+  // 2. DINESH (Explicit User Requirement List First)
+  { categoryId: 'dinesh', prompt: 'Appa, business eppadi poguthu?', shortLabel: 'Business eppadi poguthu?' },
+  { categoryId: 'dinesh', prompt: 'Business-la oru doubt irukku.', shortLabel: 'Business-la oru doubt' },
+  { categoryId: 'dinesh', prompt: 'Appa, oru decision edukka help pannunga.', shortLabel: 'Decision edukka help' },
+  { categoryId: 'dinesh', prompt: 'Family responsibilities pathi pesalama?', shortLabel: 'Family responsibilities' },
+  { categoryId: 'dinesh', prompt: 'Appa, konjam advice venum.', shortLabel: 'Konjam advice venum' },
+  { categoryId: 'dinesh', prompt: 'Business-la pressure-a irukku.', shortLabel: 'Business pressure' },
+  { categoryId: 'dinesh', prompt: 'Appa, unga opinion venum.', shortLabel: 'Unga opinion venum' },
+  { categoryId: 'dinesh', prompt: 'Innikki business-la enna nadandhuchu theriyuma?', shortLabel: 'Innikki business update' },
+  { categoryId: 'dinesh', prompt: 'Dinesh pesuren, Appa. Business advice konjam venum.', shortLabel: 'Dinesh: Business advice' },
+  { categoryId: 'dinesh', prompt: 'Appa, Dinesh business eppadi poguthu?', shortLabel: 'Dinesh business status' },
+  { categoryId: 'dinesh', prompt: 'Appa, Dinesh pathi enna ninaikireenga?', shortLabel: 'Dinesh pathi ninaipu' },
+  { categoryId: 'dinesh', prompt: 'Appa, en business eppadi poguthu nu kekkareengala?', shortLabel: 'En business eppadi poguthu?' },
+  { categoryId: 'dinesh', prompt: 'Appa, naan ippo business paathuttu irukken.', shortLabel: 'Naan ippo business paakkuren' },
+  { categoryId: 'dinesh', prompt: 'Appa, naan edhaavadhu difficult decision edutha eppadi guide pannuveenga?', shortLabel: 'Difficult decision guide' },
+  { categoryId: 'dinesh', prompt: 'Appa, enakku confidence venumna enna solluveenga?', shortLabel: 'Enakku confidence advice' },
+  { categoryId: 'dinesh', prompt: 'Appa, enakku neenga kudutha best advice enna?', shortLabel: 'Enakku best advice' },
+  { categoryId: 'dinesh', prompt: 'Appa, en future pathi enna hope vechurundheenga?', shortLabel: 'En future hope' },
+  { categoryId: 'dinesh', prompt: 'Appa, naan tired-a irundha eppadi encourage pannuveenga?', shortLabel: 'Tired-a irundha encourage' },
+  { categoryId: 'dinesh', prompt: 'Appa, en kitta ippo pesina mudhala enna keppeenga?', shortLabel: 'Mudhala enna keppeenga?' },
+
+  // 3. PADMA (Explicit User Requirement List First)
+  { categoryId: 'padma', prompt: 'Bawa, eppadi irukkeenga?', shortLabel: 'Bawa, eppadi irukkeenga?' },
+  { categoryId: 'padma', prompt: 'Bawa, konjam pesalama?', shortLabel: 'Bawa, konjam pesalama?' },
+  { categoryId: 'padma', prompt: 'Bawa, innikku enna panniteenga?', shortLabel: 'Innikku enna panniteenga?' },
+  { categoryId: 'padma', prompt: 'Bawa, family pathi pesalama?', shortLabel: 'Family pathi pesalama?' },
+  { categoryId: 'padma', prompt: 'Bawa, enakku konjam advice venum.', shortLabel: 'Enakku konjam advice venum' },
+  { categoryId: 'padma', prompt: 'Bawa, old memories pathi pesalama?', shortLabel: 'Old memories pathi pesalama?' },
+  { categoryId: 'padma', prompt: 'Bawa, sapteengala?', shortLabel: 'Bawa, sapteengala?' },
+  { categoryId: 'padma', prompt: 'Bawa, seekiram vandhuruvingala?', shortLabel: 'Seekiram vandhuruvingala?' },
+  { categoryId: 'padma', prompt: 'Padma pesuren, Bawa. Kaapi kudicheengala?', shortLabel: 'Padma: Kaapi kudicheengala?' },
+  { categoryId: 'padma', prompt: 'Bawa, namma 30th anniversary trip nyabagam irukka?', shortLabel: '30th anniversary trip' },
+  { categoryId: 'padma', prompt: 'Bawa, naan eppadi irukken nu kekkareengala?', shortLabel: 'Naan eppadi irukken?' },
+  { categoryId: 'padma', prompt: 'Bawa, en kitta ippo pesina enna keppeenga?', shortLabel: 'En kitta enna keppeenga?' },
+  { categoryId: 'padma', prompt: 'Bawa, naan upset-a irundha eppadi pesuveenga?', shortLabel: 'Upset aana eppadi pesuveenga?' },
+  { categoryId: 'padma', prompt: 'Bawa, namma rendu peroda favourite memory enna?', shortLabel: 'Rendu peroda favourite memory' },
+  { categoryId: 'padma', prompt: 'Bawa, en kooda irundha happy memory sollunga.', shortLabel: 'En kooda happy memory' },
+  { categoryId: 'padma', prompt: 'Bawa, enakku konjam aaruthala pesunga.', shortLabel: 'Enakku aaruthal' },
+  { categoryId: 'padma', prompt: 'Bawa, namma family life pathi pesalama?', shortLabel: 'Family life pathi pesalama?' },
+
+  // 4. OUR FAMILY
+  { categoryId: 'family', prompt: 'Appa, namma family pathi pesalama?', shortLabel: 'Namma family pathi pesalama?' },
+  { categoryId: 'family', prompt: 'Appa, namma family-la ungalukku romba pidicha memory enna?', shortLabel: 'Family-la romba pidicha memory' },
+  { categoryId: 'family', prompt: 'Appa, namma ellarum serndhu irundha happy moment enna?', shortLabel: 'Ellarum serndhu irundha moment' },
+  { categoryId: 'family', prompt: 'Appa, namma family pathi ungalukku enna perumai?', shortLabel: 'Family pathi unga perumai' },
+  { categoryId: 'family', prompt: 'Appa, family-ku neenga eppavume sollra advice enna?', shortLabel: 'Family-ku eppavume sollra advice' },
+  { categoryId: 'family', prompt: 'Appa, namma childhood memories-la ungalukku pidichadhu edhu?', shortLabel: 'Childhood memories-la pidichadhu' },
+  { categoryId: 'family', prompt: 'Appa, namma family-ku oru message sollunga.', shortLabel: 'Family-ku oru message' },
+  { categoryId: 'family', prompt: 'Appa, ellarum happy-a irukkanum-na enna solluveenga?', shortLabel: 'Ellarum happy-a irukka advice' },
+  { categoryId: 'family', prompt: 'Appa, namma family-la ungalukku romba close-a irundha moment enna?', shortLabel: 'Romba close-a irundha moment' },
+  { categoryId: 'family', prompt: 'Appa, namma family memories-la oru story sollunga.', shortLabel: 'Family memories story' },
+
+  // 5. FOOD / SAMAYAL
+  { categoryId: 'food', prompt: 'Appa, enakku vendakkai poriyal senja memory pathi pesunga.', shortLabel: 'Vendakkai poriyal memory' },
+  { categoryId: 'food', prompt: 'Appa, vendakkai poriyal yen ivlo virumbi senjeenga?', shortLabel: 'Vendakkai poriyal story' },
+  { categoryId: 'food', prompt: 'Appa, family-ku samayal pannina memories irukka?', shortLabel: 'Samayal pannina memories' },
+  { categoryId: 'food', prompt: 'Appa, namma family food memories-la ungalukku pidichadhu edhu?', shortLabel: 'Family food memories' },
+  { categoryId: 'food', prompt: 'Appa, enakku pidicha food pathi pesalama?', shortLabel: 'Enakku pidicha food' },
+  { categoryId: 'food', prompt: 'Appa, family-la yaarukku enna food pidikkum nu pesalama?', shortLabel: 'Yaarukku enna food pidikkum?' },
+  { categoryId: 'food', prompt: 'Appa, namma ellarum serndhu saapta memories sollunga.', shortLabel: 'Serndhu saapta memories' },
+  { categoryId: 'food', prompt: 'Appa, neenga senja samayal-la ungalukku pidichadhu edhu?', shortLabel: 'Neenga senja samayal' },
+
+  // 6. CHILDHOOD
+  { categoryId: 'childhood', prompt: 'Appa, naan chinna vayasula eppadi iruppen?', shortLabel: 'Chinna vayasula naan' },
+  { categoryId: 'childhood', prompt: 'Appa, namma chinna vayasula eppadi irundhom?', shortLabel: 'Chinna vayasula namma' },
+  { categoryId: 'childhood', prompt: 'Appa, namma childhood-la oru happy story sollunga.', shortLabel: 'Childhood happy story' },
+  { categoryId: 'childhood', prompt: 'Appa, unga childhood pathi oru story sollunga.', shortLabel: 'Unga childhood story' },
+
+  // 7. APPA ADVICE
+  { categoryId: 'advice', prompt: 'Appa, life-la kashtam vandha enna pannanu solluveenga?', shortLabel: 'Life kashtam advice' },
+  { categoryId: 'advice', prompt: 'Appa, padippu pathi enna advice kuduppeenga?', shortLabel: 'Padippu advice' },
+  { categoryId: 'advice', prompt: 'Appa, family responsibilities pathi enna solluveenga?', shortLabel: 'Family responsibilities' },
+  { categoryId: 'advice', prompt: 'Appa, confidence koranja enna solluveenga?', shortLabel: 'Confidence koranja advice' },
+  { categoryId: 'advice', prompt: 'Appa, difficult decision edukkumbodhu enna yosikkanum?', shortLabel: 'Difficult decision edukkumbodhu' },
+  { categoryId: 'advice', prompt: 'Appa, success pathi ungaloda advice enna?', shortLabel: 'Success pathi advice' },
+  { categoryId: 'advice', prompt: 'Appa, family relationships important-a irukkanum-na enna solluveenga?', shortLabel: 'Relationships advice' },
+  { categoryId: 'advice', prompt: 'Appa, future pathi oru advice sollunga.', shortLabel: 'Future advice' },
+  { categoryId: 'advice', prompt: 'Appa, naan strong-a irukkanum-na enna solluveenga?', shortLabel: 'Naan strong-a irukka advice' },
+
+  // 8. DAILY LIFE
+  { categoryId: 'daily', prompt: 'Appa, innikku konjam pesalama?', shortLabel: 'Innikku konjam pesalama?' },
+  { categoryId: 'daily', prompt: 'Appa, innikku enna pesalaam?', shortLabel: 'Innikku enna pesalaam?' },
+  { categoryId: 'daily', prompt: 'Appa, konjam neram unga kooda pesanum.', shortLabel: 'Konjam neram unga kooda' },
+  { categoryId: 'daily', prompt: 'Appa, innikku ungaloda pesanum pola irukku.', shortLabel: 'Ungaloda pesanum pola irukku' },
+  { categoryId: 'daily', prompt: 'Appa, innikku enakku epdi irukku nu kekkareengala?', shortLabel: 'Enakku epdi irukku?' },
+
+  // 9. CASUAL TALK
+  { categoryId: 'casual', prompt: 'Appa, oru story sollunga.', shortLabel: 'Oru story sollunga' },
+  { categoryId: 'casual', prompt: 'Appa, unga advice konjam venum.', shortLabel: 'Unga advice konjam venum' },
+  { categoryId: 'casual', prompt: 'Appa, konjam sirikka vaikkura oru story sollunga.', shortLabel: 'Sirikka vaikkura story' },
+  { categoryId: 'casual', prompt: 'Appa, namma old memories pathi pesalama?', shortLabel: 'Old memories pathi pesalama?' },
+
+  // 10. MEMORIES
+  { categoryId: 'memories', prompt: 'Appa, ungalukku romba nyabagam varra family moment enna?', shortLabel: 'Romba nyabagam varra moment' },
+  { categoryId: 'memories', prompt: 'Appa, namma family-la marakka mudiyadha moment enna?', shortLabel: 'Marakka mudiyadha moment' },
+  { categoryId: 'memories', prompt: 'Appa, namma ellarum serndhu irundha happy moment enna?', shortLabel: 'Serndhu irundha happy moment' },
+  { categoryId: 'memories', prompt: 'Appa, namma family-la ungalukku romba pidicha memory enna?', shortLabel: 'Romba pidicha memory' },
+
+  // 11. EMOTIONAL TALK
+  { categoryId: 'emotional', prompt: 'Appa, innikku konjam low-a feel panren.', shortLabel: 'Innikku low-a feel panren' },
+  { categoryId: 'emotional', prompt: 'Appa, enakku konjam courage venum.', shortLabel: 'Enakku courage venum' },
+  { categoryId: 'emotional', prompt: 'Appa, miss panren.', shortLabel: 'Appa, miss panren' },
+  { categoryId: 'emotional', prompt: 'Appa, enakku oru nalla advice sollunga.', shortLabel: 'Nalla advice sollunga' },
+  { categoryId: 'emotional', prompt: 'Appa, konjam aaruthala pesunga.', shortLabel: 'Konjam aaruthala pesunga' },
+  { categoryId: 'emotional', prompt: 'Appa, naan strong-a irukkanum nu sollunga.', shortLabel: 'Naan strong-a irukkanum' },
+
+  // 12. STORIES
+  { categoryId: 'stories', prompt: 'Appa, namma family-la nadandha oru funny memory sollunga.', shortLabel: 'Funny memory story' },
+  { categoryId: 'stories', prompt: 'Appa, oru pazhaya family story sollunga.', shortLabel: 'Pazhaya family story' },
+  { categoryId: 'stories', prompt: 'Appa, namma family memories-la oru story sollunga.', shortLabel: 'Family memories story' },
+  { categoryId: 'stories', prompt: 'Appa, unga childhood pathi oru story sollunga.', shortLabel: 'Unga childhood story' },
+];

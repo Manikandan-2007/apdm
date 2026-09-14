@@ -1,0 +1,10 @@
+{
+  "name": "APDM",
+  "description": "An interactive remembrance companion designed to honor cherished memories with bilingual voice and text reflections.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
